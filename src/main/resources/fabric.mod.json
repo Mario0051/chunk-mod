@@ -1,38 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "chunkmod",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Chunk Mod",
+  "description": "Allows the player to join the world during world generation.",
   "authors": [
-    "Me!"
+    "mario_51"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Mario0051/chunk-mod",
+    "issues": "https://github.com/Mario0051/chunk-mod/issues"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPL-3.0-only",
+  "icon": "assets/chunkmod/icon.png",
 
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
-    ]
-  },
   "mixins": [
-    "modid.mixins.json"
+    "chunkmod.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.19",
-    "fabric-api": "*",
-    "minecraft": "~1.19.4",
+    "minecraft": "1.19.x",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
